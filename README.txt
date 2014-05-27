@@ -13,6 +13,10 @@ Lord of Light Items
 So far, the implemented list of items includes:
 	- Full set of Quartz armor and appropriate recipes
 
+Changelog
+=========
+v1.0 First commit; quartz armor and recipes added.
+
 
 Installation
 =============
