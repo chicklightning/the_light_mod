@@ -33,7 +33,7 @@ public class ItemManager {
     //durability: maximum damage factor for material; leather 5, gold 7, chainmail 15, iron 15, diamond 33
     //reduction amounts: damage reduction (1 point is half a shield) for each armor piece
     //leather {1 3 2 1}, gold {2 5 3 1}, chainmail = {2 5 4 1}, iron {2 6 5 2}, diamond {3 8 6 3}
-    public static ArmorMaterial quartz = EnumHelper.addArmorMaterial("Quartz", 27, new int[]{3, 9, 7, 4}, 15);
+    public static ArmorMaterial quartz = EnumHelper.addArmorMaterial("Quartz", 25, new int[]{3, 9, 7, 4}, 15);
  
     public static void initializeItem() {
     	//last number is armor slot: 0 is helmet, 1 is chestplate, 2 is leggings, 3 is boots
