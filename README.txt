@@ -1,7 +1,7 @@
 --------------
 The Light Mod
 --------------
-Currently version 1.0, beta. Running Minecraft v1.7.2.
+Currently version 1.0.1, beta. Running Minecraft v1.7.2.
 
 This mod was made for a fake religion created by Florida-based server host, LuxLegatus.
 His in-game religion, The Lord of Light, warranted some special items made from a lighter
@@ -15,7 +15,8 @@ So far, the implemented list of items includes:
 
 Changelog
 =========
-v1.0 First commit; quartz armor and recipes added.
+v1.0.1 Slightly modified the durability of quartz armor.
+v1.0.0 First commit; quartz armor and recipes added.
 
 
 Installation
