@@ -25,7 +25,16 @@ This mod runs with the help of Minecraft Forge available for download here:
 
 ——— http://files.minecraftforge.net/ ———
 
-This mod currently runs version 1.7.2.
+This mod currently runs version 1.7.2. Just open up the .rar file using something like
+WinRAR (for Macs, UnrarX works great). Go to Minecraft, and first, click “Edit Profile” and select that you want to run Minecraft version 1.7.2. Hit Play so that the necessary
+files are generated.
+
+Forge will then allow you to install it by just running the .jar file you downloaded.
+Select the “Client” version. Open Minecraft again and select that you want to run the
+“Forge” profile instead of your normal profile. After Forge is done running and setting
+up your new Minecraft environment, drag and drop this mod into the “mods” folder that
+is generated in your .minecraft folder (or for Macs, under Library/Application Support/
+Minecraft). The mod should now be playable!
 
 
 Acknowledgements
