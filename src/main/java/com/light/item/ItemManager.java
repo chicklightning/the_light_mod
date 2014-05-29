@@ -4,6 +4,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.potion.Potion;
 import net.minecraftforge.common.util.EnumHelper;
 
 import com.light.lib.StringLibrary;
@@ -24,6 +25,15 @@ public class ItemManager {
     public static Item quartzLegs;
     public static Item quartzBoots;
     public static Item obsidianSword;
+    public static Item lbLightsEmbrace;
+    public static Item lbIllumination;
+    public static Item lbIncandescence;
+    public static Item lcAversion;
+    public static Item lcConflagration;
+    public static Item lbAether;
+    public static Item lcFervor;
+    public static Item lcReckoning;
+    public static Item quartzSword;
     
     //level of material the tool can harvest, between 0 and 3 (number greater than 3 is three, less than 0 is 0)
     //max uses: wood is 59, stone 131, iron 250, diamond 1561, gold 32
@@ -31,6 +41,7 @@ public class ItemManager {
     //damage: wood 0 (as if it wasn't there), stone 1, iron 2, diamond 3, gold 0
     //enchantability (natural enchantability factor): wood 15, stone 5, iron 14, diamond 10, gold 22
     public static ToolMaterial obsidian = EnumHelper.addToolMaterial("Obsidian", 0, 1947, 1, 5, 15);
+    public static ToolMaterial moreQuartz = EnumHelper.addToolMaterial("Quartz", 0, 1900, 1, 5, 19);
     
     //durability: maximum damage factor for material; leather 5, gold 7, chainmail 15, iron 15, diamond 33
     //reduction amounts: damage reduction (1 point is half a shield) for each armor piece
@@ -44,6 +55,15 @@ public class ItemManager {
     	quartzLegs = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzLegs"), 2).setUnlocalizedName("QuartzLegs").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_leggings");
     	quartzBoots = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzBoots"), 3).setUnlocalizedName("QuartzBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_boots");
     	obsidianSword = new ObsidianSword(obsidian);
+    	lbLightsEmbrace = new LesserBlessing(0, 0.0F, false, 1).setUnlocalizedName("LBLightsEmbrace").setTextureName(StringLibrary.MODID + ":lights_embrace");
+    	lbIllumination = new LesserBlessing(0, 0.0F, false, 2).setUnlocalizedName("LBIllumination").setTextureName(StringLibrary.MODID + ":illumination");
+    	lbIncandescence = new LesserBlessing(0, 0.0F, false, 3).setUnlocalizedName("LBIncandescence").setTextureName(StringLibrary.MODID + ":incandescence");
+    	lbAether = new LesserBlessing(0, 0.0F, false, 6).setUnlocalizedName("LBAether").setTextureName(StringLibrary.MODID + ":aether");
+    	lcAversion = new LesserBlessing(0, 0.0F, false, 4).setUnlocalizedName("LCAversion").setTextureName(StringLibrary.MODID + ":lc_aversion");
+    	lcConflagration = new LesserBlessing(0, 0.0F, false, 5).setUnlocalizedName("LCConflagration").setTextureName(StringLibrary.MODID + ":conflagration");
+    	lcFervor = new LesserBlessing(0, 0.0F, false, 7).setUnlocalizedName("LCFervor").setTextureName(StringLibrary.MODID + ":fervor");
+    	lcReckoning = new LesserBlessing(0, 0.0F, false, 8).setUnlocalizedName("LCReckoning").setTextureName(StringLibrary.MODID + ":reckoning");
+    	quartzSword = new QuartzSword(moreQuartz);
     }
  
     public static void registerItem() {
@@ -52,6 +72,14 @@ public class ItemManager {
     	GameRegistry.registerItem(quartzLegs, quartzLegs.getUnlocalizedName());
     	GameRegistry.registerItem(quartzBoots, quartzBoots.getUnlocalizedName());
     	GameRegistry.registerItem(obsidianSword, obsidianSword.getUnlocalizedName());
+    	GameRegistry.registerItem(lbLightsEmbrace, lbLightsEmbrace.getUnlocalizedName());
+    	GameRegistry.registerItem(lbIllumination, lbIllumination.getUnlocalizedName());
+    	GameRegistry.registerItem(lbIncandescence, lbIncandescence.getUnlocalizedName());
+    	GameRegistry.registerItem(lbAether, lbAether.getUnlocalizedName());
+    	GameRegistry.registerItem(lcAversion, lcAversion.getUnlocalizedName());
+    	GameRegistry.registerItem(lcConflagration, lcConflagration.getUnlocalizedName());
+    	GameRegistry.registerItem(lcFervor, lcFervor.getUnlocalizedName());
+    	GameRegistry.registerItem(lcReckoning, lcReckoning.getUnlocalizedName());
     }
  
 }
