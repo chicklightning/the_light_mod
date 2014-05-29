@@ -80,6 +80,7 @@ public class ItemManager {
     	GameRegistry.registerItem(lcConflagration, lcConflagration.getUnlocalizedName());
     	GameRegistry.registerItem(lcFervor, lcFervor.getUnlocalizedName());
     	GameRegistry.registerItem(lcReckoning, lcReckoning.getUnlocalizedName());
+    	GameRegistry.registerItem(quartzSword, quartzSword.getUnlocalizedName());
     }
  
 }

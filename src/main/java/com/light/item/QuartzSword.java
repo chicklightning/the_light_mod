@@ -26,8 +26,7 @@ public class QuartzSword extends ItemSword {
 	
 	public boolean hitEntity(ItemStack par1ItemStack, EntityLiving par2EntityLiving, EntityLiving par3EntityLiving)
     {
-            par1ItemStack.damageItem(1, par3EntityLiving);
-            par2EntityLiving.addPotionEffect(new PotionEffect(Potion.blindness.getId(), 80, 3));
+            par2EntityLiving.addPotionEffect(new PotionEffect(Potion.blindness.getId(), 100, 3));
             return true;
     }
 	

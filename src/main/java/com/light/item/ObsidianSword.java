@@ -1,15 +1,19 @@
 package com.light.item;
 
 import java.util.List;
-
-import com.light.lib.StringLibrary;
+import java.util.Random;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
+import net.minecraft.world.World;
+
+import com.light.lib.StringLibrary;
 
 public class ObsidianSword extends ItemSword {
 
@@ -18,6 +22,18 @@ public class ObsidianSword extends ItemSword {
 		this.setUnlocalizedName("ObsidianSword");
 		this.setCreativeTab(CreativeTabs.tabCombat);
 		this.setTextureName(StringLibrary.MODID + ":obsidian_sword");
+	}
+	
+	public boolean hitEntity(ItemStack par1ItemStack, EntityLiving par2EntityLiving, EntityLiving par3EntityLiving)
+    {
+            par2EntityLiving.dismountEntity(par2EntityLiving);
+            return true;
+    }
+	
+	@Override
+	public void onCreated(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer) {
+	    int level = 30; //pretend the player has 20 levels to spend
+	    par1ItemStack = EnchantmentHelper.addRandomEnchantment(new Random(), par1ItemStack, level);
 	}
 	
 	@Override
