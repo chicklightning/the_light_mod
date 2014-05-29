@@ -18,8 +18,7 @@ So far, the implemented list of items includes:
 
 Changelog
 =========
-v0.2.1 Altered Obsidian Sword to have a random enchantment upon crafting, and dismounts opponent.
-	   Quartz sword now blinds opponents and requires a Nether Star to repair it.
+v0.2.1 Altered Obsidian Sword to have a random enchantment upon crafting, and dismounts opponent | Quartz sword now blinds opponents and requires a Nether Star to repair it.
 v0.2.0 Added Lesser Blessings, altered Obsidian Sword and added basics for Quartz Sword.
 v0.1.0 Added an Obsidian Sword.
 v0.0.1 Slightly modified the durability of quartz armor.
