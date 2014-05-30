@@ -18,6 +18,7 @@ So far, the implemented list of items includes:
 
 Changelog
 =========
+v0.3.2 Greater Blessing/Curse recipes now create two of each Blessing/Curse.
 v0.3.1 Added recipes to create Greater Blessings and Curses.
 v0.3.0 Added Greater Blessings/Curses that can be combined with vanilla items to give them
 enchantments | Added recipes to create Obsidian and Quartz swords, which have Greater Blessing/Curse

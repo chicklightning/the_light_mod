@@ -72,13 +72,13 @@ public class ItemManager {
     	lcFervor = new LesserBlessing(0, 0.0F, false, 7).setUnlocalizedName("LCFervor").setTextureName(StringLibrary.MODID + ":fervor");
     	lcReckoning = new LesserBlessing(0, 0.0F, false, 8).setUnlocalizedName("LCReckoning").setTextureName(StringLibrary.MODID + ":reckoning");
     	quartzSword = new QuartzSword(moreQuartz);
-    	gbLightsEmbrace = new GreaterBlessing(1).setUnlocalizedName("GBLightsEmbrace").setTextureName(StringLibrary.MODID + "greater_lights_embrace");
-    	gbIllumination = new GreaterBlessing(2).setUnlocalizedName("GBIllumination").setTextureName(StringLibrary.MODID + "greater_illumination");
-    	gbIncandescence = new GreaterBlessing(3).setUnlocalizedName("GBIncandescence").setTextureName(StringLibrary.MODID + "greater_incandescence");
-    	gcAversion = new GreaterBlessing(4).setUnlocalizedName("GCAversion").setTextureName(StringLibrary.MODID + "greater_aversion");
-    	gcConflagration = new GreaterBlessing(5).setUnlocalizedName("GCConflagration").setTextureName(StringLibrary.MODID + "greater_conflagration");
-    	gbAether = new GreaterBlessing(6).setUnlocalizedName("GBAether").setTextureName(StringLibrary.MODID + "greater_aether");
-    	gcFervor = new GreaterBlessing(7).setUnlocalizedName("GCFervor").setTextureName(StringLibrary.MODID + "greater_fervor");
+    	gbLightsEmbrace = new GreaterBlessing(1).setUnlocalizedName("GBLightsEmbrace").setTextureName(StringLibrary.MODID + ":greater_lights_embrace");
+    	gbIllumination = new GreaterBlessing(2).setUnlocalizedName("GBIllumination").setTextureName(StringLibrary.MODID + ":greater_illumination");
+    	gbIncandescence = new GreaterBlessing(3).setUnlocalizedName("GBIncandescence").setTextureName(StringLibrary.MODID + ":greater_incandescence");
+    	gcAversion = new GreaterBlessing(4).setUnlocalizedName("GCAversion").setTextureName(StringLibrary.MODID + ":greater_aversion");
+    	gcConflagration = new GreaterBlessing(5).setUnlocalizedName("GCConflagration").setTextureName(StringLibrary.MODID + ":greater_conflagration");
+    	gbAether = new GreaterBlessing(6).setUnlocalizedName("GBAether").setTextureName(StringLibrary.MODID + ":greater_aether");
+    	gcFervor = new GreaterBlessing(7).setUnlocalizedName("GCFervor").setTextureName(StringLibrary.MODID + ":greater_fervor");
     	gcReckoning = new GreaterBlessing(8).setUnlocalizedName("GCReckoning").setTextureName(StringLibrary.MODID + ":greater_reckoning");
     }
  
