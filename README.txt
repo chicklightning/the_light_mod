@@ -1,7 +1,7 @@
 --------------
 The Light Mod
 --------------
-Currently version 0.4.1, beta. Running Minecraft v1.7.2.
+Currently version 0.4.2, beta. Running Minecraft v1.7.2.
 
 This mod was made for a fake religion created by Florida-based server host, LuxLegatus. His in-game religion, The Lord of Light, warranted some special items made from a lighter material, namely quartz. All hail the Lord of Light!
 
@@ -19,6 +19,7 @@ So far, the implemented list of items includes:
 
 Changelog
 =========
+v0.4.2 Changed Quartz Armor/Sword enchantments to be on-par with Diamond enchantments for Greater Blessings and Curses.
 v0.4.1 Added recipes so Quartz Swords and Quartz Armor can benefit from Greater Blessing/Curse enchants | Changed many of the existing recipes so that they are on a sliding scale; iron benefits the least, then diamond, then quartz items.
 v0.4.0 Added a Blessed Quartz Sword and Cursed Obsidian Sword, now differentiated from Quartz and Obsidian Swords, which have normal sword recipes | Blessed and Cursed swords now have the recipes the previous regular Quartz and Obsidian swords had (using Greater Blessings and Curses) | Blessed and Cursed Swords now have special damage effects.
 v0.3.2 Greater Blessing/Curse recipes now create two of each Blessing/Curse.
@@ -37,7 +38,7 @@ This mod runs with the help of Minecraft Forge available for download here:
 
 ——— http://files.minecraftforge.net/ ———
 
-Download the Minecraft Forge 1.7.2 Installer, then open the .jar file to run the Installer. Just open up the .rar file using something like WinRAR (for Macs, UnrarX works great). Go to Minecraft, and first, click “Edit Profile” and select that you want to run Minecraft version 1.7.2. Hit Play so that the necessary files are generated.
+Download the Minecraft Forge 1.7.2 Installer. Open up the .rar file using something like WinRAR (for Macs, UnrarX works great). Go to Minecraft, and first, click “Edit Profile” and select that you want to run Minecraft version 1.7.2. Hit Play so that the necessary files are generated.
 
 Forge will then allow you to install it by just running the .jar file you downloaded. Select the “Client” version. Open Minecraft again and select that you want to run the “Forge” profile instead of your normal profile. After Forge is done running and setting up your new Minecraft environment, drag and drop this mod into the “mods” folder that is generated in your .minecraft folder (or for Macs, under Library/Application Support/Minecraft). The mod should now be playable!
 

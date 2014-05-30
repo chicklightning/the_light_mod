@@ -23,8 +23,8 @@ public class RecipeManager {
 		ironBootsLE.addEnchantment(Enchantment.thorns, 1);
 		ironBootsLE.addEnchantment(Enchantment.featherFalling, 2);
 		ItemStack diamondBootsLE = new ItemStack(Items.diamond_boots);
-		diamondBootsLE.addEnchantment(Enchantment.thorns, 2);
-		diamondBootsLE.addEnchantment(Enchantment.featherFalling, 3);
+		diamondBootsLE.addEnchantment(Enchantment.thorns, 3);
+		diamondBootsLE.addEnchantment(Enchantment.featherFalling, 4);
 		ItemStack quartzBootsLE = new ItemStack(ItemManager.quartzBoots);
 		quartzBootsLE.addEnchantment(Enchantment.thorns, 3);
 		quartzBootsLE.addEnchantment(Enchantment.featherFalling, 4);
@@ -33,8 +33,8 @@ public class RecipeManager {
 		ironHelmIL.addEnchantment(Enchantment.respiration, 1);
 		ironHelmIL.addEnchantment(Enchantment.fireProtection, 2);
 		ItemStack diamondHelmIL = new ItemStack(Items.diamond_helmet);
-		diamondHelmIL.addEnchantment(Enchantment.respiration, 2);
-		diamondHelmIL.addEnchantment(Enchantment.fireProtection, 3);
+		diamondHelmIL.addEnchantment(Enchantment.respiration, 3);
+		diamondHelmIL.addEnchantment(Enchantment.fireProtection, 4);
 		ItemStack quartzHelmIL = new ItemStack(ItemManager.quartzHelmet);
 		quartzHelmIL.addEnchantment(Enchantment.respiration, 3);
 		quartzHelmIL.addEnchantment(Enchantment.fireProtection, 4);
@@ -43,15 +43,15 @@ public class RecipeManager {
 		ironChestIC.addEnchantment(Enchantment.protection, 2);
 		ironChestIC.addEnchantment(Enchantment.unbreaking, 1);
 		ItemStack diamondChestIC = new ItemStack(Items.diamond_chestplate);
-		diamondChestIC.addEnchantment(Enchantment.protection, 3);
-		diamondChestIC.addEnchantment(Enchantment.unbreaking, 2);
+		diamondChestIC.addEnchantment(Enchantment.protection, 4);
+		diamondChestIC.addEnchantment(Enchantment.unbreaking, 3);
 		ItemStack quartzChestIC = new ItemStack(ItemManager.quartzChest);
 		quartzChestIC.addEnchantment(Enchantment.protection, 4);
 		quartzChestIC.addEnchantment(Enchantment.unbreaking, 3);
 		
 		ItemStack diamondSwordAV = new ItemStack(Items.diamond_sword);
 		diamondSwordAV.addEnchantment(Enchantment.fireAspect, 2);
-		diamondSwordAV.addEnchantment(Enchantment.looting, 2);
+		diamondSwordAV.addEnchantment(Enchantment.looting, 3);
 		ItemStack ironSwordAV = new ItemStack(Items.iron_sword);
 		ironSwordAV.addEnchantment(Enchantment.fireAspect, 1);
 		ironSwordAV.addEnchantment(Enchantment.looting, 1);
@@ -68,7 +68,7 @@ public class RecipeManager {
 		ironSwordAE.addEnchantment(Enchantment.sharpness, 3);
 		ItemStack diamondSwordAE = new ItemStack(Items.diamond_sword);
 		diamondSwordAE.addEnchantment(Enchantment.knockback, 2);
-		diamondSwordAE.addEnchantment(Enchantment.sharpness, 4);
+		diamondSwordAE.addEnchantment(Enchantment.sharpness, 5);
 		ItemStack quartzSwordAE = new ItemStack(ItemManager.quartzSword);
 		quartzSwordAE.addEnchantment(Enchantment.knockback, 2);
 		quartzSwordAE.addEnchantment(Enchantment.sharpness, 5);
