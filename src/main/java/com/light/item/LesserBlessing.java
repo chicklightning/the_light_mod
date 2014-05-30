@@ -32,7 +32,7 @@ public class LesserBlessing extends ItemFood {
 		ID = blessingID;
 		this.setCreativeTab(CreativeTabs.tabMisc);
 		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(this), 1, 2, 15));
-		ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(new ItemStack(this),1, 2, 25));
+		ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(new ItemStack(this),1, 2, 17));
 		ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(this),1, 2, 10));
 	}
 	
@@ -56,7 +56,7 @@ public class LesserBlessing extends ItemFood {
 			else if(this.ID == 2)
 			{
 				player.addPotionEffect(new PotionEffect(Potion.blindness.getId(), 60, 1));
-				player.addExperience(15);
+				player.addExperience(20);
 			}
 			
 			else if(this.ID == 3)
@@ -91,12 +91,12 @@ public class LesserBlessing extends ItemFood {
 			
 			else if(this.ID == 8)
 			{
-				player.addPotionEffect(new PotionEffect(Potion.jump.getId(), 10000, 3));
-				player.addPotionEffect(new PotionEffect(Potion.poison.getId(), 80, 3));
+				player.addPotionEffect(new PotionEffect(Potion.jump.getId(), 1000, 3));
+				player.addPotionEffect(new PotionEffect(Potion.wither.getId(), 100, 3));
 				player.addPotionEffect(new PotionEffect(Potion.digSlowdown.getId(), 4000, 3));
 				player.addPotionEffect(new PotionEffect(Potion.moveSlowdown.getId(), 4000, 3));
-				player.addPotionEffect(new PotionEffect(Potion.blindness.getId(), 1000, 3));
-				player.addPotionEffect(new PotionEffect(Potion.hunger.getId(), 1, 3));
+				player.addPotionEffect(new PotionEffect(Potion.blindness.getId(), 4000, 3));
+				player.addPotionEffect(new PotionEffect(Potion.hunger.getId(), 1, 6));
 			}
 		}
 	}

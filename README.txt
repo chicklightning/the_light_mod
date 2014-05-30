@@ -1,7 +1,7 @@
 --------------
 The Light Mod
 --------------
-Currently version 0.2.1, beta. Running Minecraft v1.7.2.
+Currently version 0.3.0, beta. Running Minecraft v1.7.2.
 
 This mod was made for a fake religion created by Florida-based server host, LuxLegatus.
 His in-game religion, The Lord of Light, warranted some special items made from a lighter
@@ -18,6 +18,9 @@ So far, the implemented list of items includes:
 
 Changelog
 =========
+v0.3.0 Added Greater Blessings/Curses that can be combined with vanilla items to give them
+enchantments | Added recipes to create Greater Blessings/Curses | Added recipes to create
+Obsidian and Quartz swords, which have Greater Blessing/Curse components.
 v0.2.1 Altered Obsidian Sword to have a random enchantment upon crafting, and dismounts opponent | Quartz sword now blinds opponents and requires a Nether Star to repair it.
 v0.2.0 Added Lesser Blessings, altered Obsidian Sword and added basics for Quartz Sword.
 v0.1.0 Added an Obsidian Sword.

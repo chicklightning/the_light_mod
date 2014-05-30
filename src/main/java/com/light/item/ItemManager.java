@@ -34,6 +34,14 @@ public class ItemManager {
     public static Item lcFervor;
     public static Item lcReckoning;
     public static Item quartzSword;
+    public static Item gbLightsEmbrace;
+    public static Item gbIllumination;
+    public static Item gbIncandescence;
+    public static Item gbAether;
+    public static Item gcAversion;
+    public static Item gcConflagration;
+    public static Item gcFervor;
+    public static Item gcReckoning;
     
     //level of material the tool can harvest, between 0 and 3 (number greater than 3 is three, less than 0 is 0)
     //max uses: wood is 59, stone 131, iron 250, diamond 1561, gold 32
@@ -64,6 +72,14 @@ public class ItemManager {
     	lcFervor = new LesserBlessing(0, 0.0F, false, 7).setUnlocalizedName("LCFervor").setTextureName(StringLibrary.MODID + ":fervor");
     	lcReckoning = new LesserBlessing(0, 0.0F, false, 8).setUnlocalizedName("LCReckoning").setTextureName(StringLibrary.MODID + ":reckoning");
     	quartzSword = new QuartzSword(moreQuartz);
+    	gbLightsEmbrace = new GreaterBlessing(1).setUnlocalizedName("GBLightsEmbrace").setTextureName(StringLibrary.MODID + "greater_lights_embrace");
+    	gbIllumination = new GreaterBlessing(2).setUnlocalizedName("GBIllumination").setTextureName(StringLibrary.MODID + "greater_illumination");
+    	gbIncandescence = new GreaterBlessing(3).setUnlocalizedName("GBIncandescence").setTextureName(StringLibrary.MODID + "greater_incandescence");
+    	gcAversion = new GreaterBlessing(4).setUnlocalizedName("GCAversion").setTextureName(StringLibrary.MODID + "greater_aversion");
+    	gcConflagration = new GreaterBlessing(5).setUnlocalizedName("GCConflagration").setTextureName(StringLibrary.MODID + "greater_conflagration");
+    	gbAether = new GreaterBlessing(6).setUnlocalizedName("GBAether").setTextureName(StringLibrary.MODID + "greater_aether");
+    	gcFervor = new GreaterBlessing(7).setUnlocalizedName("GCFervor").setTextureName(StringLibrary.MODID + "greater_fervor");
+    	gcReckoning = new GreaterBlessing(8).setUnlocalizedName("GCReckoning").setTextureName(StringLibrary.MODID + ":greater_reckoning");
     }
  
     public static void registerItem() {
@@ -81,6 +97,14 @@ public class ItemManager {
     	GameRegistry.registerItem(lcFervor, lcFervor.getUnlocalizedName());
     	GameRegistry.registerItem(lcReckoning, lcReckoning.getUnlocalizedName());
     	GameRegistry.registerItem(quartzSword, quartzSword.getUnlocalizedName());
+    	GameRegistry.registerItem(gbLightsEmbrace, gbLightsEmbrace.getUnlocalizedName());
+    	GameRegistry.registerItem(gbIllumination, gbIllumination.getUnlocalizedName());
+    	GameRegistry.registerItem(gbIncandescence, gbIncandescence.getUnlocalizedName());
+    	GameRegistry.registerItem(gcAversion, gcAversion.getUnlocalizedName());
+    	GameRegistry.registerItem(gcConflagration, gcConflagration.getUnlocalizedName());
+    	GameRegistry.registerItem(gbAether, gbAether.getUnlocalizedName());
+    	GameRegistry.registerItem(gcFervor, gcFervor.getUnlocalizedName());
+    	GameRegistry.registerItem(gcReckoning, gcReckoning.getUnlocalizedName());
     }
  
 }

@@ -46,5 +46,10 @@ public class QuartzSword extends ItemSword {
 	public void addInformation(ItemStack is, EntityPlayer player, List l, boolean B){ //Additional info
 		l.add("Righteousness eminates from this sword.");
 	}
+	
+	@Override
+	public boolean hasEffect(ItemStack par1ItemStack){
+		return true;
+	}
 
 }
