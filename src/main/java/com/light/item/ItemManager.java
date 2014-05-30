@@ -42,6 +42,8 @@ public class ItemManager {
     public static Item gcConflagration;
     public static Item gcFervor;
     public static Item gcReckoning;
+    public static Item blessedQuartzSword;
+    public static Item cursedObsidianSword;
     
     //level of material the tool can harvest, between 0 and 3 (number greater than 3 is three, less than 0 is 0)
     //max uses: wood is 59, stone 131, iron 250, diamond 1561, gold 32
@@ -62,7 +64,10 @@ public class ItemManager {
     	quartzChest = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzChest"), 1).setUnlocalizedName("QuartzChest").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_chest");
     	quartzLegs = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzLegs"), 2).setUnlocalizedName("QuartzLegs").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_leggings");
     	quartzBoots = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzBoots"), 3).setUnlocalizedName("QuartzBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_boots");
-    	obsidianSword = new ObsidianSword(obsidian);
+    	obsidianSword = new ObsidianSword(obsidian, 0).setUnlocalizedName("ObsidianSword");
+    	cursedObsidianSword = new ObsidianSword(obsidian, 1).setUnlocalizedName("CursedObsidianSword");
+    	blessedQuartzSword = new QuartzSword(moreQuartz, 1).setUnlocalizedName("BlessedQuartzSword");
+    	quartzSword = new QuartzSword(moreQuartz, 0).setUnlocalizedName("QuartzSword");
     	lbLightsEmbrace = new LesserBlessing(0, 0.0F, false, 1).setUnlocalizedName("LBLightsEmbrace").setTextureName(StringLibrary.MODID + ":lights_embrace");
     	lbIllumination = new LesserBlessing(0, 0.0F, false, 2).setUnlocalizedName("LBIllumination").setTextureName(StringLibrary.MODID + ":illumination");
     	lbIncandescence = new LesserBlessing(0, 0.0F, false, 3).setUnlocalizedName("LBIncandescence").setTextureName(StringLibrary.MODID + ":incandescence");
@@ -71,7 +76,6 @@ public class ItemManager {
     	lcConflagration = new LesserBlessing(0, 0.0F, false, 5).setUnlocalizedName("LCConflagration").setTextureName(StringLibrary.MODID + ":conflagration");
     	lcFervor = new LesserBlessing(0, 0.0F, false, 7).setUnlocalizedName("LCFervor").setTextureName(StringLibrary.MODID + ":fervor");
     	lcReckoning = new LesserBlessing(0, 0.0F, false, 8).setUnlocalizedName("LCReckoning").setTextureName(StringLibrary.MODID + ":reckoning");
-    	quartzSword = new QuartzSword(moreQuartz);
     	gbLightsEmbrace = new GreaterBlessing(1).setUnlocalizedName("GBLightsEmbrace").setTextureName(StringLibrary.MODID + ":greater_lights_embrace");
     	gbIllumination = new GreaterBlessing(2).setUnlocalizedName("GBIllumination").setTextureName(StringLibrary.MODID + ":greater_illumination");
     	gbIncandescence = new GreaterBlessing(3).setUnlocalizedName("GBIncandescence").setTextureName(StringLibrary.MODID + ":greater_incandescence");
@@ -87,7 +91,10 @@ public class ItemManager {
     	GameRegistry.registerItem(quartzChest, quartzChest.getUnlocalizedName());
     	GameRegistry.registerItem(quartzLegs, quartzLegs.getUnlocalizedName());
     	GameRegistry.registerItem(quartzBoots, quartzBoots.getUnlocalizedName());
+    	GameRegistry.registerItem(quartzSword, quartzSword.getUnlocalizedName());
     	GameRegistry.registerItem(obsidianSword, obsidianSword.getUnlocalizedName());
+    	GameRegistry.registerItem(cursedObsidianSword, cursedObsidianSword.getUnlocalizedName());
+    	GameRegistry.registerItem(blessedQuartzSword, blessedQuartzSword.getUnlocalizedName());
     	GameRegistry.registerItem(lbLightsEmbrace, lbLightsEmbrace.getUnlocalizedName());
     	GameRegistry.registerItem(lbIllumination, lbIllumination.getUnlocalizedName());
     	GameRegistry.registerItem(lbIncandescence, lbIncandescence.getUnlocalizedName());
@@ -96,7 +103,6 @@ public class ItemManager {
     	GameRegistry.registerItem(lcConflagration, lcConflagration.getUnlocalizedName());
     	GameRegistry.registerItem(lcFervor, lcFervor.getUnlocalizedName());
     	GameRegistry.registerItem(lcReckoning, lcReckoning.getUnlocalizedName());
-    	GameRegistry.registerItem(quartzSword, quartzSword.getUnlocalizedName());
     	GameRegistry.registerItem(gbLightsEmbrace, gbLightsEmbrace.getUnlocalizedName());
     	GameRegistry.registerItem(gbIllumination, gbIllumination.getUnlocalizedName());
     	GameRegistry.registerItem(gbIncandescence, gbIncandescence.getUnlocalizedName());

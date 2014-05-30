@@ -17,23 +17,32 @@ import com.light.lib.StringLibrary;
 
 public class QuartzSword extends ItemSword {
 
-	public QuartzSword(ToolMaterial p_i45356_1_) {
+	private int ID;
+	
+	public QuartzSword(ToolMaterial p_i45356_1_, int swordID) {
 		super(p_i45356_1_);
-		this.setUnlocalizedName("QuartzSword");
+		ID = swordID;
 		this.setCreativeTab(CreativeTabs.tabCombat);
 		this.setTextureName(StringLibrary.MODID + ":quartz_sword");
 	}
 	
 	public boolean hitEntity(ItemStack par1ItemStack, EntityLiving par2EntityLiving, EntityLiving par3EntityLiving)
     {
-            par2EntityLiving.addPotionEffect(new PotionEffect(Potion.blindness.getId(), 100, 3));
-            return true;
+           if(this.ID == 1)
+           {
+        	   par2EntityLiving.addPotionEffect(new PotionEffect(Potion.blindness.getId(), 100, 3));
+           }
+           
+           return true;
     }
 	
 	@Override
 	public EnumRarity getRarity(ItemStack par1ItemStack)
     {
-        return EnumRarity.epic;
+        if(this.ID == 1)
+        	return EnumRarity.epic;
+        else
+        	return EnumRarity.common;
     }
 	
 	@Override
@@ -44,12 +53,16 @@ public class QuartzSword extends ItemSword {
 	
 	@Override
 	public void addInformation(ItemStack is, EntityPlayer player, List l, boolean B){ //Additional info
-		l.add("Righteousness eminates from this sword.");
+		if(this.ID == 1)
+			l.add("Righteousness eminates from this sword.");
 	}
 	
 	@Override
 	public boolean hasEffect(ItemStack par1ItemStack){
-		return true;
+		if(this.ID == 1)
+			return true;
+		else
+			return false;
 	}
 
 }

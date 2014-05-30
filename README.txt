@@ -18,6 +18,10 @@ So far, the implemented list of items includes:
 
 Changelog
 =========
+v0.4.0 Added a Blessed Quartz Sword and Cursed Obsidian Sword, now differentiated from Quartz and
+Obsidian Swords, which have normal sword recipes | Blessed and Cursed swords now have the recipes
+the previous regular Quartz and Obsidian swords had (using Greater Blessings and Curses) | Blessed
+and Cursed Swords now have special damage effects.
 v0.3.2 Greater Blessing/Curse recipes now create two of each Blessing/Curse.
 v0.3.1 Added recipes to create Greater Blessings and Curses.
 v0.3.0 Added Greater Blessings/Curses that can be combined with vanilla items to give them

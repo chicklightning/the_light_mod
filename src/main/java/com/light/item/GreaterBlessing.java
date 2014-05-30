@@ -32,31 +32,31 @@ public class GreaterBlessing extends Item {
 		
 		//light's embrace
 		if(this.ID == 1)
-			l.add("Adds blessings of Thorns and Feather Falling to boots.");
+			l.add("Adds boot blessings.");
 		
 		//illumination
 		if(this.ID == 2)
-			l.add("Adds blessings of Respiration and Fire Protection to head.");
+			l.add("Adds helmet blessings.");
 		
 		//incandescence
 		if(this.ID == 3)
-			l.add("Adds blessings of Protection and Unbreaking to chest.");
+			l.add("Adds chestplate blessings.");
 		
 		//aversion
 		if(this.ID == 4)
-			l.add("Adds curses of Fire Aspect and Looting to sword.");
+			l.add("Adds sword curses.");
 		
 		//conflagration
 		if(this.ID == 5)
-			l.add("Adds curses of Infinity and Flame to bow.");
+			l.add("Adds bow curses.");
 		
 		//aether
 		if(this.ID == 6)
-			l.add("Adds blessings of Knockback and Sharpness to sword.");
+			l.add("Adds sword blessings.");
 		
 		//fervor
 		if(this.ID == 7)
-			l.add("Adds curses of Infinity and Punch to bow.");
+			l.add("Adds bow curses.");
 		
 		//reckoning
 		if(this.ID == 8)
