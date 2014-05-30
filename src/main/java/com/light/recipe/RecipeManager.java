@@ -97,6 +97,14 @@ public class RecipeManager {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzBoots), "   ", "x x", "x x", 'x', Items.quartz);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzSword), "aba", "bcd", "ede", 'a', ItemManager.gbAether, 'b', ItemManager.gbIllumination, 'c', Blocks.quartz_block, 'd', ItemManager.gbIncandescence, 'e', ItemManager.gbLightsEmbrace);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.obsidianSword), "aba", "bcd", "ede", 'a', ItemManager.gcAversion, 'b', ItemManager.gcConflagration, 'c', Blocks.obsidian, 'd', ItemManager.gcFervor, 'e', ItemManager.gcReckoning);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.gbAether), "x x", "x x", "x x", 'x', ItemManager.lbAether);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.gbIllumination), "x x", "x x", "x x", 'x', ItemManager.lbIllumination);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.gbIncandescence), "x x", "x x", "x x", 'x', ItemManager.lbIncandescence);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.gbLightsEmbrace), "x x", "x x", "x x", 'x', ItemManager.lbLightsEmbrace);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.gcAversion), "x x", "x x", "x x", 'x', ItemManager.lcAversion);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.gcConflagration), "x x", "x x", "x x", 'x', ItemManager.lcConflagration);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.gcFervor), "x x", "x x", "x x", 'x', ItemManager.lcFervor);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.gcReckoning), "x x", "x x", "x x", 'x', ItemManager.lcReckoning);
 	}//end addCraftingRecipes
 		  
 		 
