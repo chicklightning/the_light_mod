@@ -11,12 +11,12 @@ import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.potion.Potion;
-import net.minecraft.potion.PotionEffect;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityDispenser;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
 
 import com.light.entity.AltarBook;
 import com.light.item.ItemManager;
@@ -38,7 +38,6 @@ public class AltarBlock extends BlockContainer {
 		super(material);
 		this.setLightLevel(3);
 		this.setResistance(100);
-		this.setBlockUnbreakable();
         this.setCreativeTab(CreativeTabs.tabDecorations);
         this.setStepSound(Block.soundTypeAnvil);
         this.setBlockName("AltarBlock");
@@ -73,68 +72,58 @@ public class AltarBlock extends BlockContainer {
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int p_149727_6_, float p_149727_7_, float p_149727_8_, float p_149727_9_)
     {
         Random rand = new Random();
-        //1 in 16 chance of getting a random blessing
-		int random = rand.nextInt(128) + 1;
     	
     	if (!world.isRemote)
         {
-            if(random == 1 || random == 2)
+    		int random = rand.nextInt(512) + 1;
+            
+        	player.clearActivePotions();
+        	
+    		if(random >= 1 && random <= 8)
             {
             	player.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(), 360, 2));
 				player.addPotionEffect(new PotionEffect(Potion.damageBoost.getId(), 360, 2));
-            	return true;
             }
             
-            if(random == 3 || random == 4)
+            else if(random >= 9 && random <= 16)
             {
             	player.addPotionEffect(new PotionEffect(Potion.blindness.getId(), 60, 1));
 				player.addExperience(20);
-            	return true;
             }
             
-            if(random == 5 || random == 6)
+            else if(random >= 17 && random <= 24)
             {
             	player.addPotionEffect(new PotionEffect(Potion.nightVision.getId(), 6000, 2));
 				player.addPotionEffect(new PotionEffect(Potion.resistance.getId(), 500, 2));
-				return true;
             }
             
-            if(random == 7 || random == 8)
+            else if(random >= 25 && random <= 32)
             {
             	player.addPotionEffect(new PotionEffect(Potion.fireResistance.getId(), 5000, 3));
 				player.addPotionEffect(new PotionEffect(Potion.regeneration.getId(), 80, 1));
-				return true;
             }
             
-            if(random == 9)
+            else if(random == 33)
             {
-            	EntityItem gbLightsEmbrace = new EntityItem(world, x, y, x, new ItemStack(ItemManager.gbLightsEmbrace));
-            	world.spawnEntityInWorld(gbLightsEmbrace);
-            	return true;
+            	world.spawnEntityInWorld(new EntityItem(world, x, y, z, new ItemStack(ItemManager.gbAether, 1)));
             }
             
-            if(random == 10)
+            else if(random == 34)
             {
-            	EntityItem gbAether = new EntityItem(world, x, y, x, new ItemStack(ItemManager.gbAether));
-            	world.spawnEntityInWorld(gbAether);
-            	return true;
+            	world.spawnEntityInWorld(new EntityItem(world, x, y, z, new ItemStack(ItemManager.gbIllumination, 1)));
             }
             
-            if(random == 11)
+            else if(random == 35)
             {
-            	EntityItem gbIllumination = new EntityItem(world, x, y, x, new ItemStack(ItemManager.gbIllumination));
-            	world.spawnEntityInWorld(gbIllumination);
-            	return true;
+            	world.spawnEntityInWorld(new EntityItem(world, x, y, z, new ItemStack(ItemManager.gbIncandescence, 1)));
             }
             
-            if(random == 12)
+            else if(random == 36)
             {
-            	EntityItem gbIncandescence = new EntityItem(world, x, y, x, new ItemStack(ItemManager.gbIncandescence));
-            	world.spawnEntityInWorld(gbIncandescence);
-            	return true;
+            	world.spawnEntityInWorld(new EntityItem(world, x, y, z, new ItemStack(ItemManager.gbLightsEmbrace, 1)));
             }
-              
-        	return false;
+
+        	return true;
         }
         else
         	return false;

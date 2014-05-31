@@ -20,6 +20,7 @@ So far, the implemented list of items includes:
 
 Changelog
 =========
+v0.5.1 Minor Altar Block bug fixing; right-clicking the Altar now correctly grants both Lesser Blessing buffs and has small chance of dropping a Greater Blessing | Altar is also unbreakable.
 v0.5.0 Added an Altar block, which has a chance of granting a random Lesser Blessing buff on right-clicking; unfortunately the texture for the top of the block doesn't render properly.
 v0.4.2 Changed Quartz Armor/Sword enchantments to be on-par with Diamond enchantments for Greater Blessings and Curses.
 v0.4.1 Added recipes so Quartz Swords and Quartz Armor can benefit from Greater Blessing/Curse enchants | Changed many of the existing recipes so that they are on a sliding scale; iron benefits the least, then diamond, then quartz items.
