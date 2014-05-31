@@ -3,6 +3,7 @@ package com.light.item;
 import java.util.List;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -30,7 +31,9 @@ public class QuartzSword extends ItemSword {
     {
            if(this.ID == 1)
            {
+        	   par1ItemStack.damageItem(1, par3EntityLiving);
         	   par2EntityLiving.addPotionEffect(new PotionEffect(Potion.blindness.getId(), 100, 3));
+        	   par2EntityLiving.addPotionEffect(new PotionEffect(Potion.confusion.getId(), 100, 2));
            }
            
            return true;
@@ -58,11 +61,12 @@ public class QuartzSword extends ItemSword {
 	}
 	
 	@Override
-	public boolean hasEffect(ItemStack par1ItemStack){
-		if(this.ID == 1)
-			return true;
-		else
-			return false;
-	}
+	public boolean doesContainerItemLeaveCraftingGrid(ItemStack par1ItemStack)
+    {
+        if(this.ID == 1)
+        	return true;
+        else
+        	return false;
+    }
 
 }

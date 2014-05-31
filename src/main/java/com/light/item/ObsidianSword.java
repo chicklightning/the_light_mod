@@ -30,11 +30,11 @@ public class ObsidianSword extends ItemSword {
     {
 		if(this.ID == 1)
 		{
+			par1ItemStack.damageItem(1, par3EntityLiving);
 			par2EntityLiving.dismountEntity(par2EntityLiving);
-            return true;
+			par2EntityLiving.setFire(2);
 		}
-		else
-			return false;
+		return true;
     }
 	
 	@Override
@@ -64,14 +64,6 @@ public class ObsidianSword extends ItemSword {
 	public boolean getIsRepairable(ItemStack par1ItemStack, ItemStack par2ItemStack)
 	{
 		return Items.emerald == par2ItemStack.getItem() ? true : super.getIsRepairable(par1ItemStack, par2ItemStack);
-	}
-	
-	@Override
-	public boolean hasEffect(ItemStack par1ItemStack){
-		if(this.ID == 1)		
-			return true;
-		else
-			return false;
 	}
 	
 }

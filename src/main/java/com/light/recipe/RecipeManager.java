@@ -58,6 +58,9 @@ public class RecipeManager {
 		ItemStack quartzSwordAV = new ItemStack(ItemManager.quartzSword);
 		quartzSwordAV.addEnchantment(Enchantment.fireAspect, 2);
 		quartzSwordAV.addEnchantment(Enchantment.looting, 3);
+		ItemStack obsidianSwordAV = new ItemStack(ItemManager.obsidianSword);
+		obsidianSwordAV.addEnchantment(Enchantment.fireAspect, 2);
+		obsidianSwordAV.addEnchantment(Enchantment.looting, 2);
 		
 		ItemStack bowCON = new ItemStack(Items.bow);
 		bowCON.addEnchantment(Enchantment.infinity, 1);
@@ -72,6 +75,9 @@ public class RecipeManager {
 		ItemStack quartzSwordAE = new ItemStack(ItemManager.quartzSword);
 		quartzSwordAE.addEnchantment(Enchantment.knockback, 2);
 		quartzSwordAE.addEnchantment(Enchantment.sharpness, 5);
+		ItemStack obsidianSwordAE = new ItemStack(ItemManager.obsidianSword);
+		obsidianSwordAE.addEnchantment(Enchantment.knockback, 2);
+		obsidianSwordAE.addEnchantment(Enchantment.sharpness, 4);
 		
 		ItemStack bowFERV = new ItemStack(Items.bow);
 		bowFERV.addEnchantment(Enchantment.infinity, 1);
@@ -93,6 +99,7 @@ public class RecipeManager {
 		GameRegistry.addShapelessRecipe(diamondSwordAV, ItemManager.gcAversion, Items.diamond_sword);
 		GameRegistry.addShapelessRecipe(ironSwordAV, ItemManager.gcAversion, Items.iron_sword);
 		GameRegistry.addShapelessRecipe(quartzSwordAV, ItemManager.gcAversion, ItemManager.quartzSword);
+		GameRegistry.addShapelessRecipe(obsidianSwordAV, ItemManager.gcAversion, ItemManager.obsidianSword);
 		GameRegistry.addShapelessRecipe(ironHelmIL, ItemManager.gbIllumination, Items.iron_helmet);
 		GameRegistry.addShapelessRecipe(diamondHelmIL, ItemManager.gbIllumination, Items.diamond_helmet);
 		GameRegistry.addShapelessRecipe(quartzHelmIL, ItemManager.gbIllumination, ItemManager.quartzHelmet);
@@ -103,6 +110,7 @@ public class RecipeManager {
 		GameRegistry.addShapelessRecipe(ironSwordAE, ItemManager.gbAether, Items.iron_sword);
 		GameRegistry.addShapelessRecipe(diamondSwordAE, ItemManager.gbAether, Items.diamond_sword);
 		GameRegistry.addShapelessRecipe(quartzSwordAE, ItemManager.gbAether, ItemManager.quartzSword);
+		GameRegistry.addShapelessRecipe(obsidianSwordAE, ItemManager.gbAether, ItemManager.obsidianSword);
 		GameRegistry.addShapelessRecipe(bowFERV, ItemManager.gcFervor, Items.bow);
 		GameRegistry.addShapelessRecipe(ironAxeRECK, ItemManager.gcReckoning, Items.iron_pickaxe);
 		GameRegistry.addShapelessRecipe(diamondAxeRECK, ItemManager.gcReckoning, Items.diamond_pickaxe);
