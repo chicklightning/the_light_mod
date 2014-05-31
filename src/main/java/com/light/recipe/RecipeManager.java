@@ -5,7 +5,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
-
+import com.light.block.BlockManager;
 import com.light.item.ItemManager;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -135,6 +135,7 @@ public class RecipeManager {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.gcConflagration, 2), "xxx", "x x", "xxx", 'x', ItemManager.lcConflagration);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.gcFervor, 2), "xxx", "x x", "xxx", 'x', ItemManager.lcFervor);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.gcReckoning, 2), "xxx", "x x", "xxx", 'x', ItemManager.lcReckoning);
+		GameRegistry.addShapedRecipe(new ItemStack(BlockManager.altarBlock), " a ", "bcb", "ccc", 'a', Items.book, 'b', Items.gold_ingot, 'c', Blocks.quartz_block);
 	}//end addCraftingRecipes
 		  
 		 
