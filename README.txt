@@ -17,6 +17,7 @@ So far, the implemented list of items includes:
 	- Lesser blessings and curses - temporary self-buffs
 	- Greater blessings and curses - permanent enchants
 	- Lord of Light Altar
+	- Dark Altar
 
 Changelog
 =========
