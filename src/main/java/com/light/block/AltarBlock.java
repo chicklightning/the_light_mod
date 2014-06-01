@@ -75,29 +75,29 @@ public class AltarBlock extends BlockContainer {
     	
     	if (!world.isRemote)
         {
-    		int random = rand.nextInt(512) + 1;
+    		int random = rand.nextInt(128) + 1;
             
         	player.clearActivePotions();
         	
-    		if(random >= 1 && random <= 8)
+    		if(random == 1 || random == 2)
             {
             	player.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(), 360, 2));
 				player.addPotionEffect(new PotionEffect(Potion.damageBoost.getId(), 360, 2));
             }
             
-            else if(random >= 9 && random <= 16)
+            else if(random == 3 || random == 4)
             {
             	player.addPotionEffect(new PotionEffect(Potion.blindness.getId(), 60, 1));
 				player.addExperience(20);
             }
             
-            else if(random >= 17 && random <= 24)
+            else if(random == 5 || random == 6)
             {
             	player.addPotionEffect(new PotionEffect(Potion.nightVision.getId(), 6000, 2));
 				player.addPotionEffect(new PotionEffect(Potion.resistance.getId(), 500, 2));
             }
             
-            else if(random >= 25 && random <= 32)
+            else if(random == 7 || random == 8)
             {
             	player.addPotionEffect(new PotionEffect(Potion.fireResistance.getId(), 5000, 3));
 				player.addPotionEffect(new PotionEffect(Potion.regeneration.getId(), 80, 1));
@@ -105,22 +105,22 @@ public class AltarBlock extends BlockContainer {
             
             else if(random == 33)
             {
-            	world.spawnEntityInWorld(new EntityItem(world, x, y, z, new ItemStack(ItemManager.gbAether, 1)));
+            	world.spawnEntityInWorld(new EntityItem(world, x, y, z, new ItemStack(ItemManager.lbAether, 1)));
             }
             
             else if(random == 34)
             {
-            	world.spawnEntityInWorld(new EntityItem(world, x, y, z, new ItemStack(ItemManager.gbIllumination, 1)));
+            	world.spawnEntityInWorld(new EntityItem(world, x, y, z, new ItemStack(ItemManager.lbIllumination, 1)));
             }
             
             else if(random == 35)
             {
-            	world.spawnEntityInWorld(new EntityItem(world, x, y, z, new ItemStack(ItemManager.gbIncandescence, 1)));
+            	world.spawnEntityInWorld(new EntityItem(world, x, y, z, new ItemStack(ItemManager.lbIncandescence, 1)));
             }
             
             else if(random == 36)
             {
-            	world.spawnEntityInWorld(new EntityItem(world, x, y, z, new ItemStack(ItemManager.gbLightsEmbrace, 1)));
+            	world.spawnEntityInWorld(new EntityItem(world, x, y, z, new ItemStack(ItemManager.lbLightsEmbrace, 1)));
             }
 
         	return true;

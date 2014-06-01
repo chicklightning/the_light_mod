@@ -1,7 +1,7 @@
 --------------
 The Light Mod
 --------------
-Currently version 0.5.3, beta. Running Minecraft v1.7.2.
+Currently version 0.5.4, beta. Running Minecraft v1.7.2.
 
 This mod was made for a fake religion created by Florida-based server host, LuxLegatus. His in-game religion, The Lord of Light, warranted some special items made from a lighter material, namely quartz. All hail the Lord of Light!
 
@@ -20,6 +20,7 @@ So far, the implemented list of items includes:
 
 Changelog
 =========
+v0.5.4 Altars now have a possibility to drop Lesser Blessings rather than Greater Blessings | Quartz Swords can now be repaired with Nether Stars | Other minor fixes.
 v0.5.3 Made Quartz Armor repairable with Nether Stars.
 v0.5.2 Added recipe to create Altar block.
 v0.5.1 Minor Altar Block bug fixing; right-clicking the Altar now correctly grants both Lesser Blessing buffs and has small chance of dropping a Greater Blessing | Altar is also unbreakable.
