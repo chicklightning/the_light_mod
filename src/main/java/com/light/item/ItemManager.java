@@ -51,7 +51,7 @@ public class ItemManager {
     //damage: wood 0 (as if it wasn't there), stone 1, iron 2, diamond 3, gold 0
     //enchantability (natural enchantability factor): wood 15, stone 5, iron 14, diamond 10, gold 22
     public static ToolMaterial obsidian = EnumHelper.addToolMaterial("Obsidian", 0, 1947, 1, 5, 16);
-    public static ToolMaterial moreQuartz = EnumHelper.addToolMaterial("Quartz", 0, 1900, 1, 5, 19);
+    public static ToolMaterial moreQuartz = EnumHelper.addToolMaterial("Quartz", 0, 1811, 1, 5, 19);
     
     //durability: maximum damage factor for material; leather 5, gold 7, chainmail 15, iron 15, diamond 33
     //reduction amounts: damage reduction (1 point is half a shield) for each armor piece

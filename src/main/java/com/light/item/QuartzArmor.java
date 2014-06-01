@@ -29,7 +29,7 @@ public class QuartzArmor extends ItemArmor {
 	@Override
 	public boolean getIsRepairable(ItemStack par1ItemStack, ItemStack par2ItemStack)
 	{
-		return Items.nether_star == par2ItemStack.getItem() ? true : super.getIsRepairable(par1ItemStack, par2ItemStack);
+		return Items.blaze_powder == par2ItemStack.getItem() ? true : super.getIsRepairable(par1ItemStack, par2ItemStack);
 	}
 
 }
