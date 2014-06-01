@@ -1,7 +1,7 @@
 --------------
 The Light Mod
 --------------
-Currently version 0.5.4, beta. Running Minecraft v1.7.2.
+Currently version 0.7.0, beta. Running Minecraft v1.7.2.
 
 This mod was made for a fake religion created by Florida-based server host, LuxLegatus. His in-game religion, The Lord of Light, warranted some special items made from a lighter material, namely quartz. All hail the Lord of Light!
 
@@ -17,9 +17,13 @@ So far, the implemented list of items includes:
 	- Lesser blessings and curses - temporary self-buffs
 	- Greater blessings and curses - permanent enchants
 	- Lord of Light Altar
+	- Dark Altar
 
 Changelog
 =========
+v0.7.0 Added a Dark Altar with appropriate textures and recipes | Dark Altar grants Lesser Curse buffs and has a chance of dropping a Lesser Curse | Light Altar now renders top properly.
+v0.6.1 Updated the textures for the Greater Blessings and Curses.
+v0.6.0 Quartz and Obsidian Sword recipes updated to include Blaze Rod and Emerald, respectively | Quartz and Obsidian Sword textures updated to reflect crafting ingredients | Quartz Armor and Swords now repairable with Blaze Powder.
 v0.5.4 Altars now have a possibility to drop Lesser Blessings rather than Greater Blessings | Quartz Swords can now be repaired with Nether Stars | Other minor fixes.
 v0.5.3 Made Quartz Armor repairable with Nether Stars.
 v0.5.2 Added recipe to create Altar block.
