@@ -136,6 +136,7 @@ public class RecipeManager {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.gcFervor, 2), "xxx", "x x", "xxx", 'x', ItemManager.lcFervor);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.gcReckoning, 2), "xxx", "x x", "xxx", 'x', ItemManager.lcReckoning);
 		GameRegistry.addShapedRecipe(new ItemStack(BlockManager.altarBlock), " a ", "bcb", "ccc", 'a', Items.book, 'b', Items.gold_ingot, 'c', Blocks.quartz_block);
+		GameRegistry.addShapedRecipe(new ItemStack(BlockManager.darkAltar), " a ", "bcb", "ccc", 'a', Items.book, 'b', Items.emerald, 'c', Blocks.obsidian);
 	}//end addCraftingRecipes
 		  
 		 

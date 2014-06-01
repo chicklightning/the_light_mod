@@ -12,14 +12,17 @@ public class BlockManager {
     }
 	
 	public static Block altarBlock;
+	public static Block darkAltar;
  
     public static void intializeBlock() {
     	//change the material based on how you want the block to break: by hand, pickaxe, etc.
     	altarBlock = new AltarBlock(Material.rock);
+    	darkAltar = new DarkAltarBlock(Material.rock);
     }
  
     public static void registerBlock() {
     	GameRegistry.registerBlock(altarBlock, altarBlock.getUnlocalizedName());
+    	GameRegistry.registerBlock(darkAltar, darkAltar.getUnlocalizedName());
     }
     
 }
