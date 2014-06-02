@@ -50,8 +50,8 @@ public class ItemManager {
     //efficiency: strength of tool; wood 2, stone 4, iron 6, diamond 8, gold 12
     //damage: wood 0 (as if it wasn't there), stone 1, iron 2, diamond 3, gold 0
     //enchantability (natural enchantability factor): wood 15, stone 5, iron 14, diamond 10, gold 22
-    public static ToolMaterial obsidian = EnumHelper.addToolMaterial("Obsidian", 0, 1947, 1, 5, 16);
-    public static ToolMaterial moreQuartz = EnumHelper.addToolMaterial("Quartz", 0, 1811, 1, 5, 19);
+    public static ToolMaterial obsidian = EnumHelper.addToolMaterial("Obsidian", 1, 1947, 1, 5, 16);
+    public static ToolMaterial moreQuartz = EnumHelper.addToolMaterial("Quartz", 1, 1811, 1, 5, 19);
     
     //durability: maximum damage factor for material; leather 5, gold 7, chainmail 15, iron 15, diamond 33
     //reduction amounts: damage reduction (1 point is half a shield) for each armor piece
@@ -60,7 +60,7 @@ public class ItemManager {
     
     public static void initializeItem() {
     	//last number is armor slot: 0 is helmet, 1 is chestplate, 2 is leggings, 3 is boots
-    	quartzHelmet = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzHelmet"), 0).setUnlocalizedName("QuartzHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_helmet");
+    	quartzHelmet = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzHelmet"), 0).setUnlocalizedName("QuartzHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_helm");
     	quartzChest = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzChest"), 1).setUnlocalizedName("QuartzChest").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_chest");
     	quartzLegs = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzLegs"), 2).setUnlocalizedName("QuartzLegs").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_leggings");
     	quartzBoots = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzBoots"), 3).setUnlocalizedName("QuartzBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_boots");
