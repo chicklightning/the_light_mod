@@ -119,10 +119,10 @@ public class RecipeManager {
 		//here the x's are stone blocks and the y's are gravel
 		
 		//here it's a 3x3 square, with each row listed respectively; add as many variables as needed in whatever combination
-		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzHelmet), "   ", "xxx", "x x", 'x', Items.quartz);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzHelmet), "xxx", "x x", 'x', Items.quartz);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzChest), "x x", "xxx", "xxx", 'x', Items.quartz);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzLegs), "xxx", "x x", "x x", 'x', Items.quartz);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzBoots), "   ", "x x", "x x", 'x', Items.quartz);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzBoots), "x x", "x x", 'x', Items.quartz);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzSword), "  x", " z ", "y  ", 'x', Blocks.quartz_block, 'y', Items.stick, 'z', Items.blaze_rod);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.obsidianSword), "  x", " z ", "y  ", 'x', Blocks.obsidian, 'y', Items.stick, 'z', Items.emerald);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.blessedQuartzSword), "aba", "bcd", "ede", 'a', ItemManager.gbAether, 'b', ItemManager.gbIllumination, 'c', ItemManager.quartzSword, 'd', ItemManager.gbIncandescence, 'e', ItemManager.gbLightsEmbrace);

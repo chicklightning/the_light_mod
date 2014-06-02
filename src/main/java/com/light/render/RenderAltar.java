@@ -45,7 +45,6 @@ public class RenderAltar extends TileEntitySpecialRenderer {
 	        GL11.glRotatef(-f3 * 180.0F / (float)Math.PI, 0.0F, 1.0F, 0.0F);
 	        GL11.glRotatef(80.0F, 0.0F, 0.0F, 1.0F);
 	        this.bindTexture(bookTexture);
-//	        bindTextureByName(StringLibrary.MODID + ":enchanting_table_book");
 	        float f4 = tileentity.field_145931_j + (tileentity.field_145933_i - tileentity.field_145931_j) * f + 0.25F;
 	        float f5 = tileentity.field_145931_j + (tileentity.field_145933_i - tileentity.field_145931_j) * f + 0.75F;
 	        f4 = (f4 - (float)MathHelper.truncateDoubleToInt((double)f4)) * 1.6F - 0.3F;
