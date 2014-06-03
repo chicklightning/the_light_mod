@@ -1,7 +1,7 @@
 --------------
 The Light Mod
 --------------
-Currently version 0.7.2, beta. Running Minecraft v1.7.2.
+Currently version 0.7.3, beta. Running Minecraft v1.7.2.
 
 This mod was made for a fake religion created by Florida-based server host, LuxLegatus. His in-game religion, The Lord of Light, warranted some special items made from a lighter material, namely quartz. All hail the Lord of Light!
 
@@ -21,6 +21,7 @@ So far, the implemented list of items includes:
 
 Changelog
 =========
+v0.7.3 Greater/Lesser Blessings and Curses now have a possibility of being generated in Stronghold Library chests, Stronghold Corridor chests, and in Bonus Chests (if activated).
 v0.7.2 Quartz Helmets and Chestplates now require Blaze Powder in their recipes to make them less easy to make | Quartz Helmet and Chestplate item textures and armor textures have been updated to match the recipe.
 v0.7.1 Recipes for Quartz Helm and Boots now work anywhere on the Crafting Grid.
 v0.7.0 Added a Dark Altar with appropriate textures and recipes | Dark Altar grants Lesser Curse buffs and has a chance of dropping a Lesser Curse | Light Altar now renders top properly.
