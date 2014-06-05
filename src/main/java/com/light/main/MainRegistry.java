@@ -17,7 +17,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 public class MainRegistry {
 
-	@SidedProxy(clientSide = "com.light.main.ClientProxy", serverSide = "com.light.main.ServerProxy")
+	@SidedProxy(clientSide = "com.light.main.ClientProxy", serverSide = "com.light.main.CommonProxy")
 	public static ClientProxy proxy;
 	
     /**
