@@ -21,6 +21,7 @@ So far, the implemented list of items includes:
 
 Changelog
 =========
+v1.0.0 (Revised) Also updated the proxies so that this mod officially works in SMP.
 v1.0.0 Just changed the version number as this mod officially moves into Alpha testing.
 v0.7.3 Greater/Lesser Blessings and Curses now have a possibility of being generated in Stronghold Library chests, Stronghold Corridor chests, and in Bonus Chests (if activated).
 v0.7.2 Quartz Helmets and Chestplates now require Blaze Powder in their recipes to make them less easy to make | Quartz Helmet and Chestplate item textures and armor textures have been updated to match the recipe.
