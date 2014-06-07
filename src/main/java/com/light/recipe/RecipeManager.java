@@ -87,7 +87,7 @@ public class RecipeManager {
 		ironAxeRECK.addEnchantment(Enchantment.silkTouch, 1);
 		ironAxeRECK.addEnchantment(Enchantment.fortune, 2);
 		ItemStack diamondAxeRECK = new ItemStack(Items.diamond_pickaxe);
-		diamondAxeRECK.addEnchantment(Enchantment.silkTouch, 1);
+		diamondAxeRECK.addEnchantment(Enchantment.unbreaking, 3);
 		diamondAxeRECK.addEnchantment(Enchantment.fortune, 3);
 		
 		//guess that this shapeless recipe (one where order doesn't matter) does this shit

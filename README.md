@@ -1,7 +1,7 @@
 --------------
 The Light Mod
 --------------
-Currently version 1.0.0, beta. Running Minecraft v1.7.2.
+Currently version 1.0.1, beta. Running Minecraft v1.7.2.
 
 This mod was made for a fake religion created by Florida-based server host, LuxLegatus. His in-game religion, The Lord of Light, warranted some special items made from a lighter material, namely quartz. All hail the Lord of Light!
 
@@ -21,6 +21,7 @@ So far, the implemented list of items includes:
 
 Changelog
 =========
+v1.0.1 Greater Curses of Reckoning now grant Fortune III and Unbreaking III as opposed to Fortune III and Silk Touch I.
 v1.0.0 (Revised) Also updated the proxies so that this mod officially works in SMP.
 v1.0.0 Just changed the version number as this mod officially moves into Alpha testing.
 v0.7.3 Greater/Lesser Blessings and Curses now have a possibility of being generated in Stronghold Library chests, Stronghold Corridor chests, and in Bonus Chests (if activated).
