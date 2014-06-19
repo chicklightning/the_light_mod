@@ -1,7 +1,7 @@
 --------------
 The Light Mod
 --------------
-Currently version 1.0.1, beta. Running Minecraft v1.7.2.
+Currently version 1.1.0, beta. Running Minecraft v1.7.2.
 
 This mod was made for a fake religion created by Florida-based server host, LuxLegatus. His in-game religion, The Lord of Light, warranted some special items made from a lighter material, namely quartz. All hail the Lord of Light!
 
@@ -10,6 +10,7 @@ Lord of Light Items
 ====================
 So far, the implemented list of items includes:
 	- Full set of Quartz armor and appropriate recipes
+	- Full set of Obsidian armor and appropriate recipes
 	- Obsidian sword with appropriate recipe
 	- Quartz sword with approriate recipe
 	- Blessed Quartz Sword
@@ -21,6 +22,7 @@ So far, the implemented list of items includes:
 
 Changelog
 =========
+v1.1.0 Added a full Obsidian Armor set with appropriate recipes and textures | Quartz Armor textures updated so that they do not have the gem in the middle | Quartz Armor recipes now require Quartz Blocks instead of Quartz.
 v1.0.1 Greater Curses of Reckoning now grant Fortune III and Unbreaking III as opposed to Fortune III and Silk Touch I.
 v1.0.0 (Revised) Also updated the proxies so that this mod officially works in SMP.
 v1.0.0 Just changed the version number as this mod officially moves into Alpha testing.
