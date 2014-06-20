@@ -15,6 +15,9 @@ import net.minecraft.potion.PotionEffect;
 
 import com.light.lib.StringLibrary;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
 
 public class QuartzSword extends ItemSword {
 
@@ -68,5 +71,14 @@ public class QuartzSword extends ItemSword {
         else
         	return false;
     }
+	
+	   @SideOnly(Side.CLIENT)
+	    public boolean hasEffect(ItemStack par1ItemStack)
+	    {
+	        if(this.ID == 1)
+	        	return true;
+	        else
+	        	return false;
+	    }
 
 }

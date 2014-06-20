@@ -17,6 +17,9 @@ import net.minecraft.world.World;
 
 import com.light.lib.StringLibrary;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
 public class ObsidianSword extends ItemSword {
 
 	private int ID;
@@ -67,5 +70,14 @@ public class ObsidianSword extends ItemSword {
 	{
 		return Items.emerald == par2ItemStack.getItem() ? true : super.getIsRepairable(par1ItemStack, par2ItemStack);
 	}
+	
+	   @SideOnly(Side.CLIENT)
+	    public boolean hasEffect(ItemStack par1ItemStack)
+	    {
+	        if(this.ID == 1)
+	        	return true;
+	        else
+	        	return false;
+	    }
 	
 }

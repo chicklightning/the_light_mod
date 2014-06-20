@@ -29,6 +29,14 @@ public class ItemManager {
     public static Item obsidianLegs;
     public static Item obsidianBoots;
     public static Item obsidianSword;
+    public static Item cursedHelm;
+    public static Item cursedChest;
+    public static Item cursedLegs;
+    public static Item cursedBoots;
+    public static Item blessedHelm;
+    public static Item blessedChest;
+    public static Item blessedLegs;
+    public static Item blessedBoots;
     public static Item lbLightsEmbrace;
     public static Item lbIllumination;
     public static Item lbIncandescence;
@@ -62,17 +70,27 @@ public class ItemManager {
     //leather {1 3 2 1}, gold {2 5 3 1}, chainmail = {2 5 4 1}, iron {2 6 5 2}, diamond {3 8 6 3}
     public static ArmorMaterial quartz = EnumHelper.addArmorMaterial("Quartz", 25, new int[]{4, 9, 7, 4}, 15);
     public static ArmorMaterial moreObsidian = EnumHelper.addArmorMaterial("Obsidian", 36, new int[]{2, 7, 6, 2}, 15);
+    public static ArmorMaterial holyQuartz = EnumHelper.addArmorMaterial("Holy Quartz", 40, new int[]{5, 10, 7, 5}, 20);
+    public static ArmorMaterial cursedObsidian = EnumHelper.addArmorMaterial("Cursed Obsidian", 53, new int[]{3, 8, 7, 4}, 20);
     
     public static void initializeItem() {
     	//last number is armor slot: 0 is helmet, 1 is chestplate, 2 is leggings, 3 is boots
-    	quartzHelmet = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzHelmet"), 0).setUnlocalizedName("QuartzHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_helmet_alt");
-    	quartzChest = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzChest"), 1).setUnlocalizedName("QuartzChest").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_chest_alt");
-    	quartzLegs = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzLegs"), 2).setUnlocalizedName("QuartzLegs").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_leggings");
-    	quartzBoots = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzBoots"), 3).setUnlocalizedName("QuartzBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_boots");
-    	obsidianHelmet = new ObsidianArmor(moreObsidian, MainRegistry.proxy.addArmor("ObsidianHelmet"), 0).setUnlocalizedName("ObsidianHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":obsidian_helm");
-    	obsidianChest = new ObsidianArmor(moreObsidian, MainRegistry.proxy.addArmor("ObsidianChest"), 1).setUnlocalizedName("ObsidianChest").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":obsidian_chest");
-    	obsidianLegs = new ObsidianArmor(moreObsidian, MainRegistry.proxy.addArmor("ObsidianLegs"), 2).setUnlocalizedName("ObsidianLegs").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":obsidian_leggings");
-    	obsidianBoots = new ObsidianArmor(moreObsidian, MainRegistry.proxy.addArmor("ObsidianBoots"), 3).setUnlocalizedName("ObsidianBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":obsidian_boots");
+    	quartzHelmet = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzHelmet"), 0, 0).setUnlocalizedName("QuartzHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_helmet_alt");
+    	quartzChest = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzChest"), 1, 0).setUnlocalizedName("QuartzChest").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_chest_alt");
+    	quartzLegs = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzLegs"), 2, 0).setUnlocalizedName("QuartzLegs").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_leggings");
+    	quartzBoots = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzBoots"), 3, 0).setUnlocalizedName("QuartzBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_boots");
+    	blessedHelm = new QuartzArmor(holyQuartz, MainRegistry.proxy.addArmor("BlessedHelmet"), 0, 1).setUnlocalizedName("BlessedHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_helmet_alt");
+    	blessedChest = new QuartzArmor(holyQuartz, MainRegistry.proxy.addArmor("BlessedChest"), 1, 1).setUnlocalizedName("BlessedChest").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_chest_alt");
+    	blessedLegs = new QuartzArmor(holyQuartz, MainRegistry.proxy.addArmor("BlessedLegs"), 2, 1).setUnlocalizedName("BlessedLegs").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_leggings");
+    	blessedBoots = new QuartzArmor(holyQuartz, MainRegistry.proxy.addArmor("BlessedBoots"), 3, 1).setUnlocalizedName("BlessedBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_boots");
+    	obsidianHelmet = new ObsidianArmor(moreObsidian, MainRegistry.proxy.addArmor("ObsidianHelmet"), 0, 0).setUnlocalizedName("ObsidianHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":obsidian_helm");
+    	obsidianChest = new ObsidianArmor(moreObsidian, MainRegistry.proxy.addArmor("ObsidianChest"), 1, 0).setUnlocalizedName("ObsidianChest").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":obsidian_chest");
+    	obsidianLegs = new ObsidianArmor(moreObsidian, MainRegistry.proxy.addArmor("ObsidianLegs"), 2, 0).setUnlocalizedName("ObsidianLegs").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":obsidian_leggings");
+    	obsidianBoots = new ObsidianArmor(moreObsidian, MainRegistry.proxy.addArmor("ObsidianBoots"), 3, 0).setUnlocalizedName("ObsidianBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":obsidian_boots");
+    	cursedHelm = new ObsidianArmor(cursedObsidian, MainRegistry.proxy.addArmor("CursedHelmet"), 0, 1).setUnlocalizedName("CursedHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":obsidian_helm");
+    	cursedChest = new ObsidianArmor(cursedObsidian, MainRegistry.proxy.addArmor("CursedChest"), 1, 1).setUnlocalizedName("CursedChest").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":obsidian_chest");
+    	cursedLegs = new ObsidianArmor(cursedObsidian, MainRegistry.proxy.addArmor("CursedLegs"), 2, 1).setUnlocalizedName("CursedLegs").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":obsidian_leggings");
+    	cursedBoots = new ObsidianArmor(cursedObsidian, MainRegistry.proxy.addArmor("CursedBoots"), 3, 1).setUnlocalizedName("CursedBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":obsidian_boots");
     	obsidianSword = new ObsidianSword(obsidian, 0).setUnlocalizedName("ObsidianSword");
     	cursedObsidianSword = new ObsidianSword(obsidian, 1).setUnlocalizedName("CursedObsidianSword");
     	blessedQuartzSword = new QuartzSword(moreQuartz, 1).setUnlocalizedName("BlessedQuartzSword");
@@ -106,6 +124,14 @@ public class ItemManager {
     	GameRegistry.registerItem(obsidianChest, obsidianChest.getUnlocalizedName());
     	GameRegistry.registerItem(obsidianLegs, obsidianLegs.getUnlocalizedName());
     	GameRegistry.registerItem(obsidianBoots, obsidianBoots.getUnlocalizedName());
+    	GameRegistry.registerItem(cursedHelm, cursedHelm.getUnlocalizedName());
+    	GameRegistry.registerItem(cursedChest, cursedChest.getUnlocalizedName());
+    	GameRegistry.registerItem(cursedLegs, cursedLegs.getUnlocalizedName());
+    	GameRegistry.registerItem(cursedBoots, cursedBoots.getUnlocalizedName());
+    	GameRegistry.registerItem(blessedHelm, blessedHelm.getUnlocalizedName());
+    	GameRegistry.registerItem(blessedChest, blessedChest.getUnlocalizedName());
+    	GameRegistry.registerItem(blessedLegs, blessedLegs.getUnlocalizedName());
+    	GameRegistry.registerItem(blessedBoots, blessedBoots.getUnlocalizedName());
     	GameRegistry.registerItem(cursedObsidianSword, cursedObsidianSword.getUnlocalizedName());
     	GameRegistry.registerItem(blessedQuartzSword, blessedQuartzSword.getUnlocalizedName());
     	GameRegistry.registerItem(lbLightsEmbrace, lbLightsEmbrace.getUnlocalizedName());
