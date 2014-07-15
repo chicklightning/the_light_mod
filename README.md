@@ -1,7 +1,7 @@
 --------------
 The Light Mod
 --------------
-Currently version 1.3.0, beta. Running Minecraft v1.7.2.
+Currently version 1.3.1, beta. Running Minecraft v1.7.2.
 
 This mod was made for a fake religion created by Florida-based server host, LuxLegatus. His in-game religion, The Lord of Light, warranted some special items made from a lighter material, namely quartz. All hail the Lord of Light!
 
@@ -32,6 +32,8 @@ So far, the implemented list of items includes:
 
 Changelog
 =========
+v1.3.1 Fixed Quartz and Obsidian Bar smelting results.
+
 v1.3.0 Added Quartz and Obsidian Bars with appropriate textures and smelting recipes
 
 v1.2.0 Added Blessed Quartz Armor and Cursed Obsidian Armor with appropriate recipes.

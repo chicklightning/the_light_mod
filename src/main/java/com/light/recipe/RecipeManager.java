@@ -154,7 +154,7 @@ public class RecipeManager {
 		 
 	public static void addSmeltingRecipes() {//   <>gui butts> print type.yes
 		//input, then output, then a number showing how much experience is gained from this action
-		GameRegistry.addSmelting(new ItemStack(Blocks.obsidian), new ItemStack(ItemManager.quartzBar), 0.3f);
-		GameRegistry.addSmelting(new ItemStack(Items.quartz), new ItemStack(ItemManager.obsidianBar), 0.3f); 
+		GameRegistry.addSmelting(new ItemStack(Blocks.obsidian), new ItemStack(ItemManager.obsidianBar), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(Items.quartz), new ItemStack(ItemManager.quartzBar), 0.3f); 
 	}
 }

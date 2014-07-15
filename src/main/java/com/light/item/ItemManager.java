@@ -154,6 +154,8 @@ public class ItemManager {
     	GameRegistry.registerItem(gbAether, gbAether.getUnlocalizedName());
     	GameRegistry.registerItem(gcFervor, gcFervor.getUnlocalizedName());
     	GameRegistry.registerItem(gcReckoning, gcReckoning.getUnlocalizedName());
+    	GameRegistry.registerItem(obsidianBar, obsidianBar.getUnlocalizedName());
+    	GameRegistry.registerItem(quartzBar, quartzBar.getUnlocalizedName());
     }
  
 }
