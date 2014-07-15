@@ -56,6 +56,8 @@ public class ItemManager {
     public static Item gcReckoning;
     public static Item blessedQuartzSword;
     public static Item cursedObsidianSword;
+    public static Item obsidianBar;
+    public static Item quartzBar;
     
     //level of material the tool can harvest, between 0 and 3 (number greater than 3 is three, less than 0 is 0)
     //max uses: wood is 59, stone 131, iron 250, diamond 1561, gold 32
@@ -69,12 +71,14 @@ public class ItemManager {
     //reduction amounts: damage reduction (1 point is half a shield) for each armor piece
     //leather {1 3 2 1}, gold {2 5 3 1}, chainmail = {2 5 4 1}, iron {2 6 5 2}, diamond {3 8 6 3}
     public static ArmorMaterial quartz = EnumHelper.addArmorMaterial("Quartz", 25, new int[]{4, 9, 7, 4}, 15);
-    public static ArmorMaterial moreObsidian = EnumHelper.addArmorMaterial("Obsidian", 36, new int[]{2, 7, 6, 2}, 15);
+    public static ArmorMaterial moreObsidian = EnumHelper.addArmorMaterial("Obsidian", 37, new int[]{2, 7, 6, 2}, 15);
     public static ArmorMaterial holyQuartz = EnumHelper.addArmorMaterial("Holy Quartz", 40, new int[]{5, 10, 7, 5}, 20);
     public static ArmorMaterial cursedObsidian = EnumHelper.addArmorMaterial("Cursed Obsidian", 53, new int[]{3, 8, 7, 4}, 20);
     
     public static void initializeItem() {
     	//last number is armor slot: 0 is helmet, 1 is chestplate, 2 is leggings, 3 is boots
+    	obsidianBar = new ModBar().setUnlocalizedName("ObsidianBar").setTextureName(StringLibrary.MODID + ":obsidian_bar");
+    	quartzBar = new ModBar().setUnlocalizedName("QuartzBar").setTextureName(StringLibrary.MODID + ":quartz_bar");
     	quartzHelmet = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzHelmet"), 0, 0).setUnlocalizedName("QuartzHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_helmet_alt");
     	quartzChest = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzChest"), 1, 0).setUnlocalizedName("QuartzChest").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_chest_alt");
     	quartzLegs = new QuartzArmor(quartz, MainRegistry.proxy.addArmor("QuartzLegs"), 2, 0).setUnlocalizedName("QuartzLegs").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":quartz_leggings");

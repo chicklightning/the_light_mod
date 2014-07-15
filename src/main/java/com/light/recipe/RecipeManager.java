@@ -119,24 +119,24 @@ public class RecipeManager {
 		//here the x's are stone blocks and the y's are gravel
 		
 		//here it's a 3x3 square, with each row listed respectively; add as many variables as needed in whatever combination
-		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzHelmet), "xxx", "xyx", 'x', Blocks.quartz_block, 'y', Items.blaze_powder);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzChest), "x x", "xyx", "xxx", 'x', Blocks.quartz_block, 'y', Items.blaze_powder);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzLegs), "xxx", "x x", "x x", 'x', Blocks.quartz_block);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzBoots), "x x", "x x", 'x', Blocks.quartz_block);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzHelmet), "xxx", "xyx", 'x', ItemManager.quartzBar, 'y', Items.blaze_powder);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzChest), "x x", "xyx", "xxx", 'x', ItemManager.quartzBar, 'y', Items.blaze_powder);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzLegs), "xxx", "x x", "x x", 'x', ItemManager.quartzBar);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzBoots), "x x", "x x", 'x', ItemManager.quartzBar);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.blessedHelm), "aba", "bcd", "ede", 'a', ItemManager.lbAether, 'b', ItemManager.lbIllumination, 'c', ItemManager.quartzHelmet, 'd', ItemManager.lbIncandescence, 'e', ItemManager.lbLightsEmbrace);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.blessedChest), "aba", "bcd", "ede", 'a', ItemManager.lbAether, 'b', ItemManager.lbIllumination, 'c', ItemManager.quartzChest, 'd', ItemManager.lbIncandescence, 'e', ItemManager.lbLightsEmbrace);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.blessedLegs), "aba", "bcd", "ede", 'a', ItemManager.lbAether, 'b', ItemManager.lbIllumination, 'c', ItemManager.quartzLegs, 'd', ItemManager.lbIncandescence, 'e', ItemManager.lbLightsEmbrace);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.blessedBoots), "aba", "bcd", "ede", 'a', ItemManager.lbAether, 'b', ItemManager.lbIllumination, 'c', ItemManager.quartzBoots, 'd', ItemManager.lbIncandescence, 'e', ItemManager.lbLightsEmbrace);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.obsidianHelmet), "xxx", "xyx", 'x', Blocks.obsidian, 'y', Items.emerald);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.obsidianChest), "x x", "xyx", "xxx", 'x', Blocks.obsidian, 'y', Items.emerald);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.obsidianLegs), "xxx", "x x", "x x", 'x', Blocks.obsidian);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.obsidianBoots), "x x", "x x", 'x', Blocks.obsidian);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.obsidianHelmet), "xxx", "xyx", 'x', ItemManager.obsidianBar, 'y', Items.emerald);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.obsidianChest), "x x", "xyx", "xxx", 'x', ItemManager.obsidianBar, 'y', Items.emerald);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.obsidianLegs), "xxx", "x x", "x x", 'x', ItemManager.obsidianBar);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.obsidianBoots), "x x", "x x", 'x', ItemManager.obsidianBar);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.cursedHelm), "aba", "bcd", "ede", 'a', ItemManager.lcAversion, 'b', ItemManager.lcConflagration, 'c', ItemManager.obsidianHelmet, 'd', ItemManager.lcFervor, 'e', ItemManager.lcReckoning);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.cursedChest), "aba", "bcd", "ede", 'a', ItemManager.lcAversion, 'b', ItemManager.lcConflagration, 'c', ItemManager.obsidianChest, 'd', ItemManager.lcFervor, 'e', ItemManager.lcReckoning);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.cursedLegs), "aba", "bcd", "ede", 'a', ItemManager.lcAversion, 'b', ItemManager.lcConflagration, 'c', ItemManager.obsidianLegs, 'd', ItemManager.lcFervor, 'e', ItemManager.lcReckoning);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.cursedBoots), "aba", "bcd", "ede", 'a', ItemManager.lcAversion, 'b', ItemManager.lcConflagration, 'c', ItemManager.obsidianBoots, 'd', ItemManager.lcFervor, 'e', ItemManager.lcReckoning);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzSword), "  x", " z ", "y  ", 'x', Blocks.quartz_block, 'y', Items.stick, 'z', Items.blaze_rod);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.obsidianSword), "  x", " z ", "y  ", 'x', Blocks.obsidian, 'y', Items.stick, 'z', Items.emerald);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.quartzSword), "  x", " z ", "y  ", 'x', ItemManager.quartzBar, 'y', Items.stick, 'z', Items.blaze_rod);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.obsidianSword), "  x", " z ", "y  ", 'x', ItemManager.obsidianBar, 'y', Items.stick, 'z', Items.emerald);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.blessedQuartzSword), "aba", "bcd", "ede", 'a', ItemManager.gbAether, 'b', ItemManager.gbIllumination, 'c', ItemManager.quartzSword, 'd', ItemManager.gbIncandescence, 'e', ItemManager.gbLightsEmbrace);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.cursedObsidianSword), "aba", "bcd", "ede", 'a', ItemManager.gcAversion, 'b', ItemManager.gcConflagration, 'c', ItemManager.obsidianSword, 'd', ItemManager.gcFervor, 'e', ItemManager.gcReckoning);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.gbAether, 2), "xxx", "x x", "xxx", 'x', ItemManager.lbAether);
@@ -152,8 +152,9 @@ public class RecipeManager {
 	}//end addCraftingRecipes
 		  
 		 
-	public static void addSmeltingRecipes() {   
+	public static void addSmeltingRecipes() {//   <>gui butts> print type.yes
 		//input, then output, then a number showing how much experience is gained from this action
-		
+		GameRegistry.addSmelting(new ItemStack(Blocks.obsidian), new ItemStack(ItemManager.quartzBar), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(Items.quartz), new ItemStack(ItemManager.obsidianBar), 0.3f); 
 	}
 }
